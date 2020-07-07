@@ -1,0 +1,408 @@
+.centered {
+  position: absolute;
+  width: 82.35%;
+  height: 77.3%;
+  left: 17.65%;
+  top: 12.6%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.centered .messages {
+  border: 15px;
+  padding: 20px;
+}
+
+#inputing {
+  outline: 0;
+  color: #333;
+  width: 80%;
+  height: 55%;
+  top: 20%;
+  left: 1%;
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  border: 0px;
+  border-radius: 15px;
+  background-color: lightgrey;
+}
+
+#submiter {
+  position: absolute;
+  top: 20%;
+  width: 10%;
+  left: 88.5%;
+  height: 55%;
+  border-radius: 15px;
+  font-size: 14px;
+  border: 0px;
+  background: #1E90FF;
+  color: white;
+}
+
+.rooms{
+  width: 17.6%;
+  height: 636px;
+  overflow-y: auto;
+  bottom: 140px;
+  left: 0%;
+  top: 12.6%;
+  position: absolute;
+}
+
+.rooms button {
+  color: black;
+  border-width: 0 0 1px 0;
+  outline: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+.rooms button:hover, .rooms button:focus {
+  background: #1E90FF;
+  color: white;
+}
+
+.add {
+  position: absolute;
+  width: 17.60%;
+  height: 12.5%;
+  top: 0%;
+  left: 0%;
+  border-radius: 5px 5px 0 0;
+}
+
+.add button {
+  position: relative;
+  top: 65.5%;
+  left: 82.5%;
+  outline: 0;
+  border-width: 2px;
+  border-color: white;
+  background: rgb(255, 255, 255, .7);
+}
+
+.add input {
+  position: absolute;
+  top: 67%;
+  left: 1%;
+  outline: 0;
+  width: 75%;
+  border-radius: 3px;
+  border: none;
+}
+
+h1 {
+  position: absolute;
+  top: 13%;
+  left: 45%;
+  color: white;
+  width: 50%;
+}
+
+#theRoom {
+  position: absolute;
+  font-size: 50px;
+  top: -10%;
+  left: 2.5%;
+  color: #36454f;
+  text-shadow: 2px 2px #fff;
+}
+
+#header {
+  width: 82.35%;
+  height: 12.5%;
+  position: absolute;
+  top: 0%;
+  left: 17.65%;
+  border-radius: 3px 3px 0 0;
+}
+
+.addStuff, .addStuff1 {
+  background: lightgrey;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+  position: absolute;
+  border-radius: 10px;
+  top: 15%;
+  left: 35%;
+  animation: move;
+  animation-duration: 1s;
+}
+
+.addStuff h1, .addStuff1 h1 {
+  left: 25%;
+  top: 15%;
+  color: #36454f;
+}
+
+.addStuff h2{
+  position: absolute;
+  left: 19%;
+  width: 300px;
+  top: 60%;
+  color: #1E90FF;
+}
+
+#exit{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5%;
+  left: 85%;
+}
+
+#exit1 {
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  width: 50px;
+  height: 50px;
+  background-color: #36454f;
+}
+
+@keyframes move {
+  0%{
+    top: 0%;
+    opacity: 0;
+  }
+  100%{
+    top: 15%;
+    opacity: 1;
+  }
+}
+
+.addStuff button, .addStuff1 button {
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+  line-height: 0px;
+  padding: 20px 20px;
+  outline: 0;
+}
+
+.addStuff1 button{
+  position: relative;
+  float: left;
+  top: 40%;
+  margin: 6%;
+}
+
+
+.addStuff button {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  background-color: #36454f;
+}
+
+.addStuff button:hover, .addStuff1 button:hover{
+  background: #36454f;
+  transform: rotate(360deg);
+  border-radius: 2px;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+
+.addStuff button:hover span{
+  position: absolute;
+  display: block;
+}
+
+.addStuff button:hover span:nth-child(1){
+  background: white;
+  width: 100%;
+  height: 2px;
+  top: 0px;
+  left: -100%;
+  animation: run1 linear infinite;
+  animation-duration: .5s;
+  animation-delay: 1s;
+}
+
+
+@keyframes run1{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.addStuff button:hover span:nth-child(2){
+  background: white;
+  width: 2px;
+  height: 100%;
+  top: -100%;
+  right: 0px;
+  animation: run2 linear infinite;
+  animation-duration: .5s;
+  animation-delay: 1.25s;
+}
+
+
+@keyframes run2{
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 100%;
+  }
+}
+
+.addStuff button:hover span:nth-child(3){
+  background: white;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 100%;
+  animation: run3 linear infinite;
+  animation-duration: .5s;
+  animation-delay: 1s;
+}
+
+
+@keyframes run3{
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+
+.addStuff button:hover span:nth-child(4){
+  background: white;
+  width: 2px;
+  height: 100%;
+  left: 0px;
+  top: 100%;
+  animation: run4 linear infinite;
+  animation-duration: .5s;
+  animation-delay: 1.25s;
+}
+
+
+@keyframes run4{
+  0%{
+    top: 100%;
+  }
+  100%{
+    top: -100%;
+  }
+}
+
+.addStuff input {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 40%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #36454f;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #36454f;
+  outline: none;
+  background: transparent;
+}
+
+.addStuff input::placeholder {
+  color: #36454f;
+}
+
+.logout {
+  position: absolute;
+  top: 1.5%;
+  left: .5%;
+}
+
+.colorsB{
+  position: absolute;
+  top: 1.5%;
+  left: 9%;
+  background: red;
+  z-index: 5;
+  background: none;
+}
+
+.logout button, .colorsB button{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #36454f;
+  width: 100%;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 3px;
+  background: rgb(255, 255, 255, .7);
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+}
+
+.logout button:hover, .colorsB button:hover {
+  background: #36454f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #36454f,
+              0 0 25px #36454f,
+              0 0 50px #36454f,
+              0 0 100px #36454f;
+}
+
+#logo {
+  position: absolute;
+  top: 9.5%;
+  left: 87.5%;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+#theSender {
+  position: absolute;
+  top: 90%;
+  left: 17.65%;
+  height: 10%;
+  width: 82.35%;
+}
+
+#initials {
+  display: flex;
+  float: left;
+  border-radius: 100px;
+  padding: 5px;
+  border-color: white;
+  border-style: solid;
+}
+
+#chatName {
+  font-size: 25px;
+}
+
+.audio, .audio2 {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: 0;
+}
+
+.audio {
+  left: 83.65%;
+  top: 10%;
+}
+
+.audio2 {
+  left: 83.65%;
+  top: 70%;
+}

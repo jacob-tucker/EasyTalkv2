@@ -1,0 +1,6 @@
+[submodule "EasyTalk-Client"]
+	path = EasyTalk-Client
+	url = https://github.com/jacobtucker13/EasyTalk-Client
+[submodule "EasyTalk-Server"]
+	path = EasyTalk-Server
+	url = https://github.com/jacobtucker13/EasyTalk-Server

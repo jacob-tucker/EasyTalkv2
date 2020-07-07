@@ -1,0 +1,36 @@
+.notMe{
+  position: relative;
+  max-width: 300px;
+  float: left;
+  clear: both;
+}
+
+.Me{
+  float: right;
+  max-width: 300px;
+  position: relative;
+  clear: both;
+}
+
+#name{
+  position: absolute;
+  top: -10px;
+  font-size: 12px;
+
+}
+
+#message-notme{
+  display: inline-block;
+  border: 15px;
+  background-color: grey;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#message-me{
+  display: inline-block;
+  border: 15px;
+  background-color: lightblue;
+  border-radius: 3px;
+  padding: 10px;
+}
