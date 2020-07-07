@@ -1,4 +1,4 @@
-# EasyTalk
+# EasyTalkv2
 EasyTalkv2 is the 2nd version of EasyTalk - a full stack chat application. Visit the website <a target="_blank" href="https://easytalkv2.netlify.app/">here</a>.
 
 EasyTalk is a chat application that allows users to send messages to other individuals privately, and to an "All Chat" that is shared by all signed up users. 
